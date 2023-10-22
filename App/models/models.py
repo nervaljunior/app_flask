@@ -27,6 +27,5 @@ class Dado(db.Model):
     intervalo = db.Column(db.Integer)
     dados_json = db.Column(db.Text)
     usuario_id = db.Column(db.Integer, db.ForeignKey('usuario.id'))
-    equipamento_id = db.Column(db.Integer, db.ForeignKey('equipamento.id'))
     usuario = db.relationship('Usuario', backref='dados')
-    equipamento = db.relationship('Equipamento', backref='dados')
+

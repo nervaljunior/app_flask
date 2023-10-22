@@ -1,7 +1,10 @@
 from App import app
 from flask import render_template
-from flask import request, jsonify
+""" from flask import request, jsonify
 from App.models import db, Usuario, Dado
+from datetime import datetime
+from typing import List """
+
 
 
 
@@ -26,10 +29,7 @@ def servicos():
 def sobre():
     return render_template('sobre.html')
 
-from datetime import datetime
-from typing import List
-
-
+""" 
 # Autenticação de usuário
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
@@ -134,3 +134,4 @@ def criar_dado():
     db.session.commit()
     return jsonify({'mensagem': 'Dado criado com sucesso'})
 
+ """
