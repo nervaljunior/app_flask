@@ -1,0 +1,101 @@
+<!doctype html />
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <title> VITA </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='normalise.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">    
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet"/>
+
+</head>
+<body>
+    {% extends 'navbar.html' %}
+
+    {% block content %}
+
+
+    <div class="linha">
+        <section>
+            <div class="coluna col3 sidebar">
+                <h3> sobre os professores</h3>
+                    <ul class="sem-marcador sem-padding">
+                        <li><a href="">professores 1</a></li>
+                        <li><a href="">professores 2</a></li>
+                        <li><a href="">professores 3</a></li>
+                        <li><a href="">professores 4</a></li>
+                        <li><a href="">professores 5</a></li>
+                        <li><a href="">professores 6</a></li>
+                        <li><a href="">professores 7</a></li>
+                    </ul>
+                    <a href="cliente.html" class="botao">ver todos &raquo;</a>
+            </div>
+            <div class="coluna col9">
+                <h2>ultimo compeonato: <em> compeonato 1</em></h2>
+                <img src="{{ url_for('static', filename='thumb-grande.jpg') }}" alt="">
+                <p>
+                texto aleatorio
+                </p>
+                <a href="clientes.html" class="botao">ver outros compeonatos &raquo;</a>
+            </div>
+        </section>
+    </div> 
+    <div class="conteudo-extra">
+        <div class="linha">
+            <div class="coluna col7">
+                <section>
+                    <h2>
+                        <p>
+                            texto aleatorio
+                        </p>
+                    </h2>
+                </section>
+            </div>
+            <div class="coluna col5">
+                <h3>ultimas noticias</h3>
+                <ul class="sem-marcador sem-padding noticias">
+                    <li>
+                        <img src="{{ url_for('static', filename='thumb-grande.jpg') }}" alt="">
+
+                        <h4> titulo da noticias</h4>
+                        <p>Robótica é a ciência que estuda as tecnologias associadas a concepção e construção de robôs. Os robôs são mecanismos automáticos que utilizam de circuitos </p>
+                        <p>Robótica é a ciência que estuda as tecnologias associadas a concepção e construção de robôs. Os robôs são mecanismos automáticos que utilizam de circuitos </p>
+                        <a href="">leia mais</a>
+                    </li>
+                    <li>
+                        <img src="{{ url_for('static', filename='thumb-grande.jpg') }}" alt="">
+
+                        <h4> titulo da noticias</h4>
+                        <p>Robótica é a ciência que estuda as tecnologias associadas a concepção e construção de robôs. Os robôs são mecanismos automáticos que utilizam de circuitos </p>
+                        <p>Robótica é a ciência que estuda as tecnologias associadas a concepção e construção de robôs. Os robôs são mecanismos automáticos que utilizam de circuitos </p>
+                        <a href="">leia mais</a>
+                    </li>
+
+                    <li>
+                        <img src="{{ url_for('static', filename='thumb-grande.jpg') }}" alt="">
+
+                        <h4> titulo da noticias</h4>
+                        <p>Robótica é a ciência que estuda as tecnologias associadas a concepção e construção de robôs. Os robôs são mecanismos automáticos que utilizam de circuitos </p>
+                        <p>Robótica é a ciência que estuda as tecnologias associadas a concepção e construção de robôs. Os robôs são mecanismos automáticos que utilizam de circuitos </p>
+                        <a href="">leia mais</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="linha">
+            <footer>
+                <div class="coluna col12">
+                    <span>&copy; 2022- reburn </span>
+                </div>
+            </footer>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>
